@@ -1,25 +1,29 @@
 var customerName = "Alliance  ";
 
 // <h1 id="tm-header" class="tm-brand text-uppercase"></h1> <!--todo: Add Customer Name-->
+
 function addCustomerName() {
 
     let title = document.getElementById('title')
     title.textContent = customerName;
     
     // <h1 id="tm-header" class="tm-brand text-uppercase"></h1> <!--todo: Add Customer Name-->
+    document.getElementById('tm-header').textContent = customerName
 
     // <h2 id="introheader" class="tm-section-title mb-5 text-uppercase tm-color-primary"></h2> <!--todo: Add Customer Name-->
-
+    let introHeader = document.getElementById('introheader')
+    introHeader.textContent = customerName;
 };
 
 function toggleColors() {
     // <!-- todo: Change all classes named 'tm-white-rect' to 'tm-blue-rect' -->
-
+    document.querySelectorAll('.tm-white-rect').className = "tm-blue-rect"
 };
 
 function hideElement() {
     //<ul class="nav flex-row tm-social-links">  <!--todo: Hide social links-->
-
+    var socialLink = document.querySelector('.tm-social-links');
+    socialLink.style.visibility = "none";
 };
 
  function addText() {
